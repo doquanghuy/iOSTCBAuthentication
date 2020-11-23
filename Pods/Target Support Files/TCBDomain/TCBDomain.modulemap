@@ -1,0 +1,6 @@
+framework module TCBDomain {
+  umbrella header "TCBDomain-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,13 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift" "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa" "${PODS_CONFIGURATION_BUILD_DIR}/RxRelay" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit" "${PODS_CONFIGURATION_BUILD_DIR}/TCBComponents" "${PODS_CONFIGURATION_BUILD_DIR}/TCBDomain" "${PODS_CONFIGURATION_BUILD_DIR}/TCBService" "${PODS_CONFIGURATION_BUILD_DIR}/pop" "${PODS_ROOT}/AccessControlClient" "${PODS_ROOT}/Backbase" "${PODS_ROOT}/CommonUtils" "${PODS_ROOT}/ContactsClient" "${PODS_ROOT}/NotificationsClient" "${PODS_ROOT}/PaymentOrderClient" "${PODS_ROOT}/ProductsClient" "${PODS_ROOT}/TransactionsClient" "${PODS_ROOT}/UserProfileClient"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TCBComponents/TCBComponents.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TCBDomain/TCBDomain.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TCBService/TCBService.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/pop/pop.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -framework "AccessControlClient" -framework "Backbase" -framework "CommonUtils" -framework "ContactsClient" -framework "CoreGraphics" -framework "Foundation" -framework "IQKeyboardManagerSwift" -framework "NotificationsClient" -framework "PaymentOrderClient" -framework "ProductsClient" -framework "QuartzCore" -framework "RxCocoa" -framework "RxRelay" -framework "RxSwift" -framework "SnapKit" -framework "TCBComponents" -framework "TCBDomain" -framework "TCBService" -framework "TransactionsClient" -framework "UIKit" -framework "UserProfileClient" -framework "pop"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
